@@ -1,3 +1,104 @@
-body{
-background-color: brown;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo geral */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 20px;
+}
+
+/* Container principal */
+div {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff10;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+header p {
+    color: #ddd;
+    font-size: 1rem;
+}
+
+/* Article */
+article {
+    margin-bottom: 20px;
+}
+
+article h2 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    margin-top: 15px;
+    color: #00ffcc;
+}
+
+article p {
+    line-height: 1.6;
+    color: #eee;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+ul li {
+    background: #ffffff15;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-left: 5px solid #00ffcc;
+}
+
+/* Hover animado */
+ul li:hover {
+    background: #00ffcc;
+    color: #000;
+    transform: translateX(10px) scale(1.02);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    div {
+        padding: 15px;
+    }
 }
